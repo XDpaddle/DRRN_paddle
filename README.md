@@ -81,7 +81,7 @@ python train.py --train-file "/root/autodl-tmp/paddle-SR/SR/DRNN/BLAH_BLAH/291-i
 Pre-trained weights can be found in BLAH_BLAH/outputs
 
 ```bash
-python eval.py --weights-file "/root/autodl-tmp/FSRCNN-pytorch-master/DRRN_paddle/BLAH_BLAH/DRRN_B1U9/x234/epoch_20.pdiparams" \
+python eval.py --weights-file "//root/autodl-tmp/paddle-SR/SR/DRNN/BLAH_BLAH/outputs/x234/epoch_20.pdiparams" \
                --eval-file "/root/autodl-tmp/paddle-SR/SR/DRNN/BLAH_BLAH/Set5_x3.h5" \
                --eval-scale 3 \
                --B 1 \
