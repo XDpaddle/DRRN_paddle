@@ -46,8 +46,8 @@ python generate_testset.py --images-dir "BLAH_BLAH/Set5" \
 Model weights will be stored in the `--outputs-dir` after every epoch.
 
 ```bash
-python train.py --train-file "/BLAH_BLAH/291-image_x234.h5" \
-                --outputs-dir "/BLAH_BLAH/DRRN_B1U9" \
+python train.py --train-file "BLAH_BLAH/291-image_x234.h5" \
+                --outputs-dir "BLAH_BLAH/DRRN_B1U9" \
                 --B 1 \
                 --U 9 \
                 --num-features 128 \
@@ -62,8 +62,8 @@ python train.py --train-file "/BLAH_BLAH/291-image_x234.h5" \
 You can also evaluate using `--eval-file`, `--eval-scale` options during training after every epoch. In addition, the best weights file will be stored in the `--outputs-dir` as a `best.pth`.
 
 ```bash
-python train.py --train-file "/BLAH_BLAH/291-image_x234.h5" \
-                --eval-file "/BLAH_BLAH/Set5_x3.h5" \
+python train.py --train-file "BLAH_BLAH/291-image_x234.h5" \
+                --eval-file "BLAH_BLAH/Set5_x3.h5" \
                 --outputs-dir "BLAH_BLAH/outputs" \
                 --eval-scale 3 \
                 --B 1 \
@@ -81,8 +81,8 @@ python train.py --train-file "/BLAH_BLAH/291-image_x234.h5" \
 Pre-trained weights can be found in BLAH_BLAH/outputs
 
 ```bash
-python eval.py --weights-file "/BLAH_BLAH/outputs/x234/epoch_20.pdiparams" \
-               --eval-file "/BLAH_BLAH/Set5_x3.h5" \
+python eval.py --weights-file "BLAH_BLAH/outputs/x234/epoch_20.pdiparams" \
+               --eval-file "BLAH_BLAH/Set5_x3.h5" \
                --eval-scale 3 \
                --B 1 \
                --U 9 \
