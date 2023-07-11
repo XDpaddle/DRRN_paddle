@@ -78,7 +78,7 @@ python train.py --train-file "/root/autodl-tmp/paddle-FSRCNN/SR/DRNN/BLAH_BLAH/2
 ```
 
 ## Evaluate
-Pre-trained weights can be found in BLAH_BLAH\outputs
+Pre-trained weights can be found in BLAH_BLAH/outputs
 
 ```bash
 python eval.py --weights-file "/root/autodl-tmp/FSRCNN-pytorch-master/DRRN_paddle/BLAH_BLAH/DRRN_B1U9/x234/epoch_20.pdiparams" \
