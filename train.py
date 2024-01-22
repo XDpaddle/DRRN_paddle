@@ -73,8 +73,8 @@ if __name__ == '__main__':
                 )
             for data in train_dataloader:
                 inputs, labels = data
-                inputs = inputs.to(device)
-                labels = labels.to(device)
+                inputs = inputs
+                labels = labels
                 preds = model(inputs)
                 loss = criterion(preds, labels) / (2 * len(inputs))
                 epoch_losses.update(loss.numpy()[0], len(inputs))
@@ -95,8 +95,8 @@ if __name__ == '__main__':
             for data in eval_dataloader:
                 inputs, labels = data
 
-                inputs = inputs.to(device)
-                labels = labels.to(device)
+                inputs = inputs
+                labels = labels
 
                 with paddle.no_grad():
                     preds = model(inputs)
