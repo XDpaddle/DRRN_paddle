@@ -59,7 +59,7 @@ python train.py --train-file "BLAH_BLAH/291-image_x234.h5" \
                 --seed 123
 ```
 
-You can also evaluate using `--eval-file`, `--eval-scale` options during training after every epoch. In addition, the best weights file will be stored in the `--outputs-dir` as a `best.pth`.
+You can also evaluate using `--eval-file`, `--eval-scale` options during training after every epoch. In addition, the best weights file will be stored in the `--outputs-dir` as a `best.pdiparams`.
 
 ```bash
 python train.py --train-file "BLAH_BLAH/291-image_x234.h5" \
